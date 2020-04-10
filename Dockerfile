@@ -9,6 +9,4 @@ RUN apt install -y php7.0
 RUN apt install -y php7.0-cli php7.0-common php7.0-curl php7.0-gd php7.0-json php7.0-mbstring php7.0-mysql php7.0-xml
 RUN a2dismod php7.3
 RUN a2enmod php7.0
-RUN mkdir /moodledata
-RUN chown www-data:www-data /moodledata
 VOLUME /var/www/html
